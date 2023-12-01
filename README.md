@@ -19,7 +19,7 @@ use commnadparser::generic_parser
 
 fn main() {
    let command = "my|command-with.separator"
-   let parsed = generic_pareser(command, vec!['|','-','.']);
+   let parsed = generic_parser(command, vec!['|','-','.']);
    println!("{:?}", parsed); // => ["my", "|", "command", "-", "with", ".", "separator"]
 }
 
